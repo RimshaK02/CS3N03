@@ -199,7 +199,34 @@ void *client_handler(void *arg) {
                 }
             }
             pthread_mutex_unlock(&state_lock);
-        } else if (strcasecmp(buffer, "ATTACK") == 0) {
+        } 
+
+            // Additional feature
+else if (strncasecmp(buffer, "SAY", 3) == 0) {
+    pthread_mutex_lock(&state_lock);
+    
+    // Extract the message (skip "SAY " prefix)
+    const char* message = buffer + 4;
+    if (strlen(message) == 0) {
+        const char *msg = "Usage: SAY <message>\n";
+        send(sockfd, msg, strlen(msg), 0);
+    } else {
+        // Format chat message
+        char chat_msg[256];
+        snprintf(chat_msg, sizeof(chat_msg), "[CHAT] Player %c: %s\n", 
+                players[player_index].symbol, message);
+        
+        // Broadcast to all players
+        for (int p = 0; p < MAX_PLAYERS; ++p) {
+            if (players[p].active) {
+                send(players[p].socket_fd, chat_msg, strlen(chat_msg), 0);
+            }
+        }
+    }
+    pthread_mutex_unlock(&state_lock);
+}
+            
+        else if (strcasecmp(buffer, "ATTACK") == 0) {
             pthread_mutex_lock(&state_lock);
             // Determine if any adjacent players exist and apply damage
             int attackerR = players[player_index].row;

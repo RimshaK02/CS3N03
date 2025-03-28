@@ -9,7 +9,8 @@ A networked multiplayer game where players move on a grid, attack adjacent oppon
 ### Server
 ```bash
 gcc server.c -o server -pthread
-
+```
 ### Client
 ```bash
 gcc client.c -o client -pthread
+```

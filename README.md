@@ -32,3 +32,15 @@ gcc client.c -o client -pthread
 ```
 * Maximum 4 concurrent players
 * Players automatically receive symbols (A-D)
+
+---
+
+# 🎮 Gameplay
+
+## 📜 Commands
+
+| Command | Format      | Description                               |
+|---------|-------------|-------------------------------------------|
+| MOVE    | MOVE UP     | Move in direction (UP/DOWN/LEFT/RIGHT)   |
+| ATTACK  | ATTACK      | Deals 20 damage to adjacent players        |
+| QUIT    | QUIT        | Disconnects from game                     |

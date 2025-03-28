@@ -44,3 +44,16 @@ gcc client.c -o client -pthread
 | MOVE    | MOVE UP     | Move in direction (UP/DOWN/LEFT/RIGHT)   |
 | ATTACK  | ATTACK      | Deals 20 damage to adjacent players        |
 | QUIT    | QUIT        | Disconnects from game                     |
+
+## ⚔️ Rules
+
+* **Grid:** 5x5 with random obstacles (`#`)
+
+* **Movement:**
+    * Blocked by obstacles, boundaries, and other players
+
+* **Combat:**
+    * Attacks only work on orthogonally adjacent players
+    * Players die when HP ≤ 0
+
+* **Winning:** Last player standing wins

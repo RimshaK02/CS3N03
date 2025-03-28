@@ -58,7 +58,7 @@ gcc client.c -o client -pthread
 
 * **Winning:** Last player standing wins
 
-## 📡 Technical Details
+# 📡 Technical Details
 
 **Protocol:**
 

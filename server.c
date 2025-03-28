@@ -52,7 +52,7 @@ void broadcast_state_locked() {
         for (int c = 0; c < GRID_SIZE; ++c) {
             char cell = '.'; // default empty cell
             if (obstacles[r][c] == 1) {
-                cell = '#'; // obstacle
+                cell = 'X'; // obstacle
             }
             // Check if any active player is at this cell
             for (int p = 0; p < MAX_PLAYERS; ++p) {

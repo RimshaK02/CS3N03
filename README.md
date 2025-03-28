@@ -30,3 +30,5 @@ gcc client.c -o client -pthread
 ```bash
 ./client 127.0.0.1 12345
 ```
+* Maximum 4 concurrent players
+* Players automatically receive symbols (A-D)

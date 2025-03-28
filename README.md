@@ -57,3 +57,17 @@ gcc client.c -o client -pthread
     * Players die when HP ≤ 0
 
 * **Winning:** Last player standing wins
+
+## 📡 Technical Details
+
+**Protocol:**
+
+* TCP sockets with text-based commands
+* State broadcasts after every action
+* Thread-safe server with mutex locks
+
+**Error Handling:**
+
+* Invalid moves: "Move blocked: obstacle in the way"
+* Invalid attacks: "No targets adjacent to attack"
+* Full server: "Server full. Try again later"

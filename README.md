@@ -25,3 +25,8 @@ gcc client.c -o client -pthread
 ```bash
 ./server 12345
 ```
+
+**2. Connect players (Separate terminals):**
+```bash
+./client 127.0.0.1 12345
+```

@@ -44,11 +44,11 @@ gcc client.c -o client -pthread
 | MOVE    | MOVE UP     | Move in direction (UP/DOWN/LEFT/RIGHT)   |
 | ATTACK  | ATTACK      | Deals 20 damage to adjacent players        |
 | QUIT    | QUIT        | Disconnects from game                     |
-| SAY     | SAY \<message\> | Broadcasts <message> within the same game instance to all other players    | 
+| SAY     | SAY \<message\> | Broadcasts \<message\> within the same game instance to all other players    | 
 
 ## ⚔️ Rules
 
-* **Grid:** 5x5 with random obstacles (`#`)
+* **Grid:** 5x5 with random obstacles (`X`)
 
 * **Movement:**
     * Blocked by obstacles, boundaries, and other players

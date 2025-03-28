@@ -4,7 +4,7 @@ A networked multiplayer game where players move on a grid, attack adjacent oppon
 
 ---
 
-## 🛠 Compilation
+## Compilation
 
 ### Server
 ```bash
@@ -17,7 +17,7 @@ gcc client.c -o client -pthread
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart Guide
 
 
 **1. Start the server (Terminal 1):**
@@ -35,9 +35,9 @@ gcc client.c -o client -pthread
 
 ---
 
-# 🎮 Gameplay
+# Gameplay
 
-## 📜 Commands
+## Commands
 
 | Command | Format      | Description                               |
 |---------|-------------|-------------------------------------------|
@@ -46,7 +46,7 @@ gcc client.c -o client -pthread
 | QUIT    | QUIT        | Disconnects from game                     |
 | SAY     | SAY \<message\> | Broadcasts \<message\> within the same game instance to all other players    | 
 
-## ⚔️ Rules
+## Rules
 
 * **Grid:** 5x5 with random obstacles (`X`)
 
@@ -59,7 +59,7 @@ gcc client.c -o client -pthread
 
 * **Winning:** Last player standing wins
 
-# 📡 Technical Details
+# Technical Details
 
 **Protocol:**
 

@@ -17,4 +17,11 @@ gcc client.c -o client -pthread
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Quickstart Guide
+
+
+**1. Start the server (Terminal 1):**
+
+```bash
+./server 12345
+```
